@@ -50,9 +50,9 @@ function countBtnClick(button){
     let count = 0;
     let $limit = button.children[0];
     return function(limit){
-        $limit.innerText = limit;
+        $limit.innerText = '('+limit+')';
         button.addEventListener('click', function(){
-            console.log($limit )
+
             if(limit-1 === 0){
                 button.disabled = true;
                 alert('Stop Click' + button.id);
